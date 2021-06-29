@@ -1,5 +1,7 @@
 package br.com.meli.aula4.ex2;
 
+import java.util.Collections;
+
 public class Fracao {
 
     private int dividendo;
