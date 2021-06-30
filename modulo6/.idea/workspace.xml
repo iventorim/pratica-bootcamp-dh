@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="906bb351-c3cd-46f4-b6fc-989b17a306bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/dakar/Carro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/dakar/Corrida.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/dakar/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/dakar/Moto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/dakar/SocorristaCarro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/dakar/SocorristaMoto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/dakar/Veiculo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex2/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex2/ContaCorrente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex2/Counter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex2/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex2/Fracao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex2/StringUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex4/Analista.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex4/Diretor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex4/Funcionario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex4/Gerente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex4/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex4/Tecnico.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex5/Celular.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex5/Pessoa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex5/Precedente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/ex5/SortUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/lachiqui/Convidado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/lachiqui/ConvidadoMeli.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/lachiqui/ConvidadoStandard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/lachiqui/EventoLaChiqui.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/lachiqui/FogosDeArtificio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/lachiqui/FogosDeArtificioIndividual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/lachiqui/PacoteDeFogosDeArtificio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/savetheropa/GuardaRoupa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/savetheropa/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/pratica-bootcamp-dh/br/com/meli/aula4/savetheropa/Vestuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pratica-bootcamp-dh.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/dakar/Carro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/dakar/Corrida.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/dakar/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/dakar/Moto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/dakar/SocorristaCarro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/dakar/SocorristaMoto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/dakar/Veiculo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex2/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex2/ContaCorrente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex2/Counter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex2/Data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex2/Fracao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex2/StringUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex4/Analista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex4/Diretor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex4/Funcionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex4/Gerente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex4/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex4/Tecnico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex5/Celular.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex5/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex5/Precedente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/ex5/SortUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/lachiqui/Convidado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/lachiqui/ConvidadoMeli.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/lachiqui/ConvidadoStandard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/lachiqui/EventoLaChiqui.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/lachiqui/FogosDeArtificio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/lachiqui/FogosDeArtificioIndividual.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/lachiqui/PacoteDeFogosDeArtificio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/savetheropa/GuardaRoupa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/savetheropa/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/br/com/meli/aula4/savetheropa/Vestuario.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1ug4pfVQyzFRUYrv8wS81WkFGrj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ApiTranslateMorseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="api-translate-morse" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.meli.apitranslatemorse.ApiTranslateMorseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="906bb351-c3cd-46f4-b6fc-989b17a306bf" name="Default Changelist" comment="" />
+      <created>1625074088581</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625074088581</updated>
+      <workItem from="1625074089857" duration="135000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
