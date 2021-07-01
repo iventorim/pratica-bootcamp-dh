@@ -10,12 +10,16 @@ import java.util.Optional;
 @Service
 public class ProdutoService {
 
-    List<Produto> produtos = new ArrayList<>();
+    List<Produto> produtos;
+
+    ProdutoService() {
+        this.produtos = new ArrayList<>();
+    }
 
     public Produto obterProdutoById(Long id) {
-        Optional<Produto> p = produtos.stream().filter(produto -> produto.getId() == id).findFirst();
-        if (p.isPresent()) {
-            return p.get();
+        Optional<Produto> optionalProduto = produtos.stream().filter(produto -> produto.getId() == id).findFirst();
+        if (optionalProduto.isPresent()) {
+            return optionalProduto.get();
         } else {
             throw new RuntimeException("Produto não encontrado!");
         }
