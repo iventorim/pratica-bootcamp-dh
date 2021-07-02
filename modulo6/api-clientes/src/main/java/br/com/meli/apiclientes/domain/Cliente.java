@@ -71,4 +71,8 @@ public class Cliente {
     public void adicionarPedido(Pedido pedido) {
         pedidos.add(pedido);
     }
+
+    public void atualizarPedido(Cliente cliente) {
+        //TODO IMPLEMENTAR
+    }
 }
