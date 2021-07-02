@@ -15,7 +15,6 @@ public class Pedido {
         this.produtos = produtos;
         this.cliente = cliente;
         this.data = LocalDate.now();
-        this.cliente.adicionarPedido(this);
     }
 
     public void atualizarPedido(Pedido pedido) {
@@ -34,5 +33,29 @@ public class Pedido {
 
     public Double getValorTotal() {
         return produtos.stream().mapToDouble(Produto::getValor).sum();
+    }
+
+    public List<Produto> getProdutos() {
+        return produtos;
+    }
+
+    public void setProdutos(List<Produto> produtos) {
+        this.produtos = produtos;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public LocalDate getData() {
+        return data;
+    }
+
+    public void setData(LocalDate data) {
+        this.data = data;
     }
 }

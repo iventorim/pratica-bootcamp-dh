@@ -1,8 +1,5 @@
 package br.com.meli.apiclientes.repository;
-
-import br.com.meli.apiclientes.domain.Cliente;
 import br.com.meli.apiclientes.domain.Pedido;
-import br.com.meli.apiclientes.domain.Produto;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +10,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
@@ -81,7 +77,8 @@ public class PedidoRepository {
         this.gravar(pedidos);
     }
 
-    public void remover(Pedido pedido) {
+    public void remover(Integer idPedido) {
+        Pedido pedido = this.ler(idPedido);
         List<Pedido> pedidos = this.lerPedidos();
         pedidos.remove(pedido);
         this.gravar(pedidos);

@@ -9,9 +9,11 @@ import br.com.meli.apiclientes.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.stream.Collectors;
 
 @Service
 public class GestaoClienteService {
@@ -45,5 +47,32 @@ public class GestaoClienteService {
 
         Cliente cliente = clienteRepository.ler(idCliente);
         return cliente.getPedidos();
+    }
+
+    public Pedido getPedido(Integer idPedido) {
+        return pedidoRepository.ler(idPedido);
+    }
+
+    public void removerPedido(Integer id) {
+        pedidoRepository.remover(id);
+    }
+
+    public void cadastrarPedido(Pedido pedido) {
+        pedidoRepository.criar(pedido);
+    }
+
+    public void atualizarPedido(Pedido pedido) {
+        pedidoRepository.atualizar(pedido);
+    }
+
+    public List<Pedido> obterPedidosPorData(int day, int month, int year) {
+        LocalDate localDate = LocalDate.of(year,month,day);
+
+        List<Pedido> pedidos = pedidoRepository.lerPedidos();
+        return pedidos.stream()
+                .filter(pedido -> pedido.getData().getYear() == localDate.getYear() &&
+                    pedido.getData().getMonth() == localDate.getMonth() &&
+                    pedido.getData().getDayOfMonth() == localDate.getDayOfMonth())
+                .collect(Collectors.toList());
     }
 }

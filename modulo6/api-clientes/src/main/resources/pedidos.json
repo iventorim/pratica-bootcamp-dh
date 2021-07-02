@@ -1,0 +1,41 @@
+[ {
+  "id" : 1,
+  "produtos" : [ {
+    "id" : 1,
+    "descricao" : "Camisa Nike",
+    "cor" : "Branca",
+    "qtd" : 3,
+    "preco" : 55.0,
+    "valor" : 165.0
+  } ],
+  "cliente" : {
+    "id" : 1,
+    "nome" : "José Mané",
+    "cpf" : "111.111.111-11",
+    "email" : "zeroela@gmail.com",
+    "telefone" : "(27) 3333-3333",
+    "pedidos" : null
+  },
+  "data" : "2021-07-02",
+  "valorTotal" : 165.0
+}, {
+  "id" : 2,
+  "produtos" : [ {
+    "id" : 1,
+    "descricao" : "Camisa Nike",
+    "cor" : "Branca",
+    "qtd" : 3,
+    "preco" : 55.0,
+    "valor" : 165.0
+  } ],
+  "cliente" : {
+    "id" : 1,
+    "nome" : "José Roela",
+    "cpf" : "111.111.111-11",
+    "email" : "zeroela@gmail.com",
+    "telefone" : "(27) 3333-3333",
+    "pedidos" : null
+  },
+  "data" : "2021-07-02",
+  "valorTotal" : 165.0
+} ]
