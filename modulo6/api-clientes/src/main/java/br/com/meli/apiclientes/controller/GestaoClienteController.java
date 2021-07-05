@@ -71,7 +71,7 @@ public class GestaoClienteController {
                                                            @PathVariable int month,
                                                            @PathVariable int year) {
         List<Pedido> pedidos = gestaoClienteService.obterPedidosPorData(day, month, year);
-        return new ResponseEntity<>(pedidos, HttpStatus.OK);
+        return ResponseEntity.ok(pedidos);
     }
 
 
