@@ -23,12 +23,7 @@ public class LinkRepository {
     public Link obterLink(UUID uuid) {
 
         if(map.containsKey(uuid))  {
-            Link link = map.get(uuid);
-            if(link.isEnabled()) {
-                return link;
-            }else{
-                throw new NoSuchElementException("Este link não se encontra válido");
-            }
+            return map.get(uuid);
         }else {
             throw new NoSuchElementException("Link não encontrado");
         }

@@ -8,6 +8,8 @@ import br.com.meli.linktracker.repository.LinkRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -37,22 +39,22 @@ public class LinkService {
        return LinkEstatisticasDTO.convert(linkRepository.obterLink(id));
     }
 
-    public Link obterLink(UUID id) {
-        Link link = linkRepository.obterLink(id);
-        if(link.getSenha().equals("")) {
-            return link;
-        }else {
-            throw new UnauthorizedException("É necessário senha para acessar esse redirecionamento");
-        }
-    }
-
-    public Link obterLink(UUID linkID, String senha) {
+    private Link obterLink(UUID linkID, Optional<String> senha) {
 
         Link link = linkRepository.obterLink(linkID);
-        if(link.getSenha().equals(senha)) {
+        if(link.isPrivate() && !link.isValidPassword(senha)){
+            throw new UnauthorizedException("A senha não foi informada ou é invalida.");
+        }
+
+        return link;
+    }
+
+    public Link obterLinkRedirect(UUID linkID, Optional<String> senha) {
+        Link link = this.obterLink(linkID, senha);
+        if(link.isEnabled()) {
             return link;
-        }else {
-            throw new UnauthorizedException("Senha inválida");
+        }else{
+            throw new NoSuchElementException("Este link não se encontra ativo");
         }
     }
 

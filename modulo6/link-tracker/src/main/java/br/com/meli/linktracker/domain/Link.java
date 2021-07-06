@@ -1,5 +1,7 @@
 package br.com.meli.linktracker.domain;
 
+import java.util.Optional;
+
 public class Link {
 
     private String url;
@@ -50,5 +52,13 @@ public class Link {
 
     public void atualizarAcessos() {
         this.contadorDeAcessos++;
+    }
+
+    public boolean isPrivate() {
+        return !senha.equals("");
+    }
+
+    public boolean isValidPassword(Optional<String> senha) {
+        return senha.isPresent() && this.senha.equals(senha.get());
     }
 }
