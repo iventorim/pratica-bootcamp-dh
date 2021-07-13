@@ -17,10 +17,10 @@ public class DiplomaService {
         this.diplomas = new ArrayList<>();
     }
 
-    public Long gerarDiploma(Aluno aluno) {
+    public Diploma gerarDiploma(Aluno aluno) {
         Diploma diploma = new Diploma(Long.valueOf(diplomas.size()+1), aluno);
         diplomas.add(diploma);
-        return diploma.getId();
+        return diploma;
     }
 
     public Diploma buscarDiplomaById(Long id) {

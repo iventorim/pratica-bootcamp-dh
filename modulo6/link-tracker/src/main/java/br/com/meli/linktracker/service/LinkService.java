@@ -1,4 +1,4 @@
-package br.com.meli.linktracker;
+package br.com.meli.linktracker.service;
 
 import br.com.meli.linktracker.domain.Link;
 import br.com.meli.linktracker.dto.LinkDTO;

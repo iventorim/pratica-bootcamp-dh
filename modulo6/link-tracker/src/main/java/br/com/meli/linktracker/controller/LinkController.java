@@ -1,6 +1,6 @@
 package br.com.meli.linktracker.controller;
 
-import br.com.meli.linktracker.LinkService;
+import br.com.meli.linktracker.service.LinkService;
 import br.com.meli.linktracker.domain.Link;
 import br.com.meli.linktracker.dto.LinkDTO;
 import br.com.meli.linktracker.dto.LinkEstatisticasDTO;
