@@ -1,6 +1,8 @@
 package br.com.meli.apidiploma.domain;
 
 
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 public class Aluno {
@@ -30,12 +32,4 @@ public class Aluno {
         this.disciplinasRealizadas = disciplinaRealizadas;
     }
 
-    public Double getMedia() {
-        return this.getDisciplinas()
-                .stream()
-                .mapToDouble(DisciplinaRealizada::getNota)
-                .average()
-                .orElseThrow(()-> new RuntimeException("Problema ao calcular a media das notas"));
-
-    }
 }

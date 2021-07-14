@@ -7,11 +7,11 @@ public class Diploma {
     private Double nota;
     private String mensagem;
 
-    public Diploma(Long id, Aluno aluno) {
+    public Diploma(Long id, String nome, Double media, String mensagem) {
         this.id = id;
-        this.nome = aluno.getNome();
-        this.nota = aluno.getMedia();
-        this.mensagem = "Sua média foi de "+nota.toString();
+        this.nome = nome;
+        this.nota = media;
+        this.mensagem = mensagem;
 
     }
 
