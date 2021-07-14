@@ -1,5 +1,6 @@
 package br.com.meli.apidiploma.domain;
 
+
 import java.util.List;
 
 public class Aluno {

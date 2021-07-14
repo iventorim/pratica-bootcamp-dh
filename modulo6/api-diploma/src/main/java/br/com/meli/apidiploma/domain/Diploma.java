@@ -11,9 +11,8 @@ public class Diploma {
         this.id = id;
         this.nome = aluno.getNome();
         this.nota = aluno.getMedia();
-        if(nota >= 9) {
-            this.mensagem = "Parabéns!!!";
-        }
+        this.mensagem = "Sua média foi de "+nota.toString();
+
     }
 
     public Long getId() {

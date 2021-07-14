@@ -11,14 +11,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import javax.validation.Valid;
 import java.net.URI;
 
 @RestController
-@RequestMapping("/diploma")
 public class DiplomaController {
 
+    final DiplomaService diplomaService;
+
     @Autowired
-    DiplomaService diplomaService;
+    public DiplomaController(DiplomaService diplomaService) {
+        this.diplomaService = diplomaService;
+    }
 
     @PostMapping
     public ResponseEntity<Aluno> gerarDiploma(@RequestBody Aluno aluno, UriComponentsBuilder uriComponentsBuilder) {
@@ -29,7 +33,7 @@ public class DiplomaController {
         return ResponseEntity.created(uri).build();
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/diploma/{id}")
     public ResponseEntity<Diploma> obterDiploma(@PathVariable Long id) {
 
         Diploma diploma = diplomaService.buscarDiplomaById(id);
@@ -37,7 +41,7 @@ public class DiplomaController {
     }
 
     @PostMapping("/analyzeNotes")
-    public ResponseEntity<DiplomaDTO> cadastrarAluno(@RequestBody StudentDTO studentDTO) {
+    public ResponseEntity<DiplomaDTO> cadastrarAluno(@Valid @RequestBody StudentDTO studentDTO) {
         Aluno aluno =StudentDTO.convertStudentToAluno(studentDTO);
         Diploma diploma = diplomaService.gerarDiploma(aluno);
 

@@ -3,6 +3,8 @@ package br.com.meli.apidiploma.dto;
 
 import br.com.meli.apidiploma.domain.DisciplinaRealizada;
 
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Size;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -10,15 +12,15 @@ public class SubjectDTO {
 
     private final String subject;
 
-    private final Double note;
+    private final @Size(max = 2) @Digits(fraction = 0, integer = 2) Double note;
 
-    public SubjectDTO(String subject, Double note) {
+    public SubjectDTO(String subject, @Size(max = 2) @Digits(fraction = 0, integer = 2) Double note) {
         this.subject = subject;
         this.note = note;
     }
 
     public static DisciplinaRealizada convertSubjectToDisciplinaRealizada(SubjectDTO subjectDTO) {
-        return new DisciplinaRealizada(subjectDTO.subject, subjectDTO.note);
+        return new DisciplinaRealizada(subjectDTO.subject, subjectDTO.getNote());
     }
 
     public static List<DisciplinaRealizada> covertListSubjectToListDisciplinaRealizada(List<SubjectDTO> listSubjectDTO) {
@@ -37,7 +39,7 @@ public class SubjectDTO {
         return subject;
     }
 
-    public Double getNote() {
+    public @Size(max = 2) @Digits(fraction = 0, integer = 2) Double getNote() {
         return note;
     }
 }
