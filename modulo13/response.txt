@@ -1,0 +1,46 @@
+-- 1: Explique o conceito de normalização e para que é usado.
+-- Normalização é um processo de padronização e validação de dados que consiste em eliminar redundâncias ou inconsistências.
+
+-- 2: Adicione um filme à tabela de filmes.
+-- INSERT INTO MOVIES(created_at, updated_at, title, rating, awards, release_date, lenght, genre_id) VALUES('','','As tranças do rei careca', '2021-07-20 00:00:00', 120, 5)
+
+-- 3: Adicione um gênero à tabela de gêneros.
+-- INSERT INTO GENRES(created_at, updated_at, name, ranking, active) VALUES ('2021-07-20 16:50:00','', 'Besteirol', 13, 1)
+
+-- 4: Associe o filme do Ex 2. ao gênero criado no Ex. 3.
+-- UPDATE MOVIES SET genre_id = 13 WHERE id=24;
+
+-- 5: Modifique a tabela de atores para que pelo menos um ator adicione como favorito o filme adicionado no Ex. 2.
+-- SELECT * FROM actors;
+-- UPDATE actors SET favorite_movie_id = (SELECT id FROM MOVIES WHERE title='As tranças do rei careca') WHERE id = 3;
+
+-- 6: Crie uma cópia temporária da tabela de filmes.
+-- SELECT * INTO TEMP TABLE movies_temp FROM movies 
+
+-- 7: Elimine desta tabela temporária todos os filmes que ganharam menos de 5 prêmios.
+-- DELETE FROM movies_temp WHERE awards < 5;
+-- SELECT * FROM movies_temp;
+
+-- 8: Obtenha a lista de todos os gêneros que possuem pelo menos um filme.
+-- SELECT g.name, COUNT(g.id) FROM movies m, genres g WHERE m.genre_id = g.id::varchar(2) GROUP BY g.name HAVING COUNT(g.id) > 0 
+
+-- 9: Obtenha a lista de atores cujo filme favorito ganhou mais de 3 prêmios.
+-- SELECT * FROM actors a, movies m WHERE a.favorite_movie_id = m.id::varchar(5) AND m.awards > 3
+
+-- EXPLAIN SELECT * INTO TEMP TABLE movies_temp FROM movies 
+-- EXPLAIN DELETE FROM movies_temp WHERE awards < 5;
+
+-- 11: O que são os índices? Para que servem?
+-- Indices são um mapeamento realizado para acelerar a recuperação de dados.
+
+-- 12: Crie um índice sobre o nome na tabela de filmes. 
+-- CREATE INDEX idx_title ON movies(title);
+
+-- 13: Verifique se o índice foi criado corretamente.
+-- SET enable_seqscan = on;
+-- EXPLAIN SELECT * FROM movies WHERE title = 'As tranças do rei careca';
+-- SELECT * FROM pg_indexes WHERE tablename='movies';
+
+
+ 
+
